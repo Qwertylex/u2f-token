@@ -43,6 +43,13 @@ else ifeq ($(TARGET),BLUE_PILL)
 	DEFS     = -DUSE_SYS3 -DFREE_STANDING -DBLUE_PILL
 	LDSCRIPT = stm32f103.ld
 	BOARD    = $(CHOPSTX)/board/board-blue-pill.h
+else ifeq ($(TARGET),BLUE_PILL_PA10BUTTON)
+	MCU      = cortex-m3
+	CHIP     = stm32f103
+	DRIVERS  = pbt.c
+	DEFS     = -DUSE_SYS3 -DFREE_STANDING -DBLUE_PILL -DTARGET_BLUE_PILL -DHAVE_PUSH_BUTTON
+	LDSCRIPT = stm32f103.ld
+	BOARD    = $(CHOPSTX)/board/board-blue-pill.h
 else ifeq ($(TARGET),BLACK_PILL)
 	MCU      = cortex-m3
 	CHIP     = stm32f103

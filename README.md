@@ -190,6 +190,7 @@ Supported targets are:
 - [TOMU](http://tomu.im/)
 - [MAPLE_MINI](https://wiki.stm32duino.com/index.php?title=Maple_Mini) 
 - [BLUE_PILL](https://wiki.stm32duino.com/index.php?title=Blue_Pill)
+- [BLUE_PILL_PA10BUTTON](https://wiki.stm32duino.com/index.php?title=Blue_Pill)
 - [BLACK_PILL](https://wiki.stm32duino.com/index.php?title=Black_Pill)
 - [ST_DONGLE](https://wiki.stm32duino.com/index.php?title=ST-LINK_clone)
 - [ST_DONGLE_NO_PUSH](https://wiki.stm32duino.com/index.php?title=ST-LINK_clone)

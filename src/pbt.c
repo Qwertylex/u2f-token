@@ -66,7 +66,11 @@ struct GPIO {
 #define GPIOE_BASE  (APB2PERIPH_BASE + 0x1800)
 #define GPIOE   ((struct GPIO *) GPIOE_BASE)
 
-#if defined(TARGET_MAPLE_MINI)
+#if defined(TARGET_BLUE_PILL)
+#define GPIO_PBT_RD    10
+#define GPIO_PBT_BASE  GPIOA_BASE
+#define GPIO_PBT_IS_LO 0
+#elif defined(TARGET_MAPLE_MINI)
 #define GPIO_PBT_RD    8
 #define GPIO_PBT_BASE  GPIOB_BASE
 #define GPIO_PBT_IS_LO 0
